@@ -1,9 +1,9 @@
 module top_module (
-    input [15:0] scancode,
-    output reg left,
-    output reg down,
-    output reg right,
-    output reg up  ); 
+    input logic[15:0] scancode,
+    output logic left,
+    output logic down,
+    output logic right,
+    output logic up  ); 
     always @(*)
         begin
             /* Method 1 */ // correct
