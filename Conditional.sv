@@ -1,6 +1,6 @@
 module top_module (
-    input [7:0] a, b, c, d,
-    output [7:0] min);//
+    input logic[7:0] a, b, c, d,
+    output logic[7:0] min);//
 
     // assign intermediate_result1 = compare? true: false;
     logic [7:0] intermdiate_result1, intermdiate_result2, intermdiate_result3;
