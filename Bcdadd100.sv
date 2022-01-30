@@ -2,9 +2,9 @@ module top_module(
     input logic[399:0] a, b,
     input logic cin,
     output logic cout,
-    output logic [399:0] sum );
+    output logic[399:0] sum );
 
-    logic [399:0] internalWireCollection1;
+    logic[399:0] internalWireCollection1;
     bcd_fadd instance1(
         .a(a[3:0]),
         .b(b[3:0]),
