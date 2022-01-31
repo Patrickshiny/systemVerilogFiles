@@ -10,11 +10,12 @@ module top_module(
     add16 add16Module3(.a(a[31:16]), .b(b[31:16]), .cin(1'b1), .cout(internalWire3), .sum(internal16Wire2));
     
     /* Method 1 */ // correct
-    always@(*)
+    // always@(*)
     /* Method 1 */
     /* Method 2 */ // correct
     // always@(internalWire1)
     /* Method 2 */
+    always_comb
     begin
         case(internalWire1)
             1'b0: sum[31:16] = internal16Wire1;
