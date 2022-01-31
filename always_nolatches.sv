@@ -4,7 +4,7 @@ module top_module (
     output logic down,
     output logic right,
     output logic up  ); 
-    always @(*)
+    always_comb
         begin
             /* Method 1 */ // correct
             left = 1'b0;
