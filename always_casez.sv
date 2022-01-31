@@ -1,7 +1,7 @@
 module top_module (
     input logic[7:0] in,
     output logic[2:0] pos  );
-    always@(*)
+    always_comb
         begin
             casez(in[7:0])
                 8'bzzzzzzz1:
