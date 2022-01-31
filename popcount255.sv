@@ -3,7 +3,7 @@ module top_module(
     output logic[7:0] out );
     integer count;
     integer counti;
-    always @(*)
+    always_comb
         begin
             counti = 0;
             for(count = 0; count<=254; count++)
