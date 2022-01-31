@@ -3,7 +3,7 @@ module top_module(
     input logic cin,
     output logic[99:0] cout,
     output logic[99:0] sum );
-    always @(*) // from truth table
+    always_comb // from truth table
         begin
             {cout[0], sum[0]} = a[0] + b[0] + cin; 
             for(int currentCount=1; currentCount<=99; currentCount++)
