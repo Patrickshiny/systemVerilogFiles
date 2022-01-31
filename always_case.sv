@@ -8,7 +8,8 @@ module top_module (
     input logic[3:0] data5,
     output logic[3:0] out   );//
 
-    always@(*) begin 
+    always_comb 
+    begin 
         case(sel)
             /// 000 to 101
             3'b000:
