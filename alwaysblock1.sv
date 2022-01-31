@@ -6,7 +6,7 @@ module top_module(
 );
 
     assign out_assign = a & b;
-    always @ (*)
+    always_comb
         begin
             out_alwaysblock = a & b;
         end
