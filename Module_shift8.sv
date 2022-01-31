@@ -15,11 +15,12 @@ module top_module (
     my_dff8 dff8Module3(.d(internalWire2), .clk(clkWire3), .q(internalWire3));
     
     /* Method 1 */
-    always@(*)
+    // always@(*)
     /* Method 1 */
     /* Method 2 */
     // always@(sel)
     /* Method 2 */
+    always_comb
     begin
         case (sel)
             2'b00: q= d;
