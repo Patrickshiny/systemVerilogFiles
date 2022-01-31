@@ -8,12 +8,12 @@ module top_module(
 	
     assign out_assign = a ^ b;
     
-    always @(*)
+    always_comb
         begin
             out_always_comb = a ^ b;
         end
     
-    always @(posedge clk)
+    always_ff @(posedge clk)
         begin
             out_always_ff = a ^ b;
         end
